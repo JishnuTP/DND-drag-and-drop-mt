@@ -1,0 +1,35 @@
+SECURED LOGIN
+
+FRONT END
+mui
+axios
+
+
+----------------------------------------------------
+
+tailwind - installation
+
+step 1  - npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+step2 - npx tailwindcss init -p  (its create a tailwind.config file)
+
+step 3- postcss.config.js 
+
+at root and 
+
+// postcss.config.js
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+};
+
+
+step 4- index.css
+
+/* src/index.css or src/App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+------------------------------------------------------------------------------------
