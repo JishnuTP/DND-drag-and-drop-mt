@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Fade } from 'react-reveal';
+// import { Fade } from 'react-reveal';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import { Link } from 'react-router-dom';
@@ -49,13 +49,13 @@ export default function LandingPage() {
             { title: "Task Management", desc: "Organize, track, and complete your tasks.", icon: "✅" },
             { title: "User Feed", desc: "Share updates and interact with others.", icon: "🌟" }
           ].map((feature, idx) => (
-            <Fade key={idx} bottom>
+            < div key={idx} bottom>
               <div className="bg-white rounded-lg p-6 shadow-lg text-center">
                 <div className="text-4xl">{feature.icon}</div>
                 <h3 className="mt-4 text-xl font-semibold">{feature.title}</h3>
                 <p className="mt-2 text-gray-600">{feature.desc}</p>
               </div>
-            </Fade>
+            </div>
           ))}
         </div>
       </section>
