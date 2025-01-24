@@ -20,6 +20,10 @@ app.use(cors({
     credentials: true // Allow credentials if needed
   }));
 
+  app.get("/", (req, res) => {
+    res.json("hello");
+});
+
 app.use("/api/auth",authRoute)
 app.use("/api",taskRoute)
 
