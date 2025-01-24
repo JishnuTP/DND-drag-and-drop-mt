@@ -21,8 +21,9 @@ app.use(cors({
   }));
 
   app.get("/", (req, res) => {
-    res.json("hello");
+    res.send("<h1>hello</h1>");
 });
+
 
 app.use("/api/auth",authRoute)
 app.use("/api",taskRoute)
